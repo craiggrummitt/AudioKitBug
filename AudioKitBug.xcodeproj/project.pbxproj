@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1682D7ED382045E711E592 /* Pods_AudioKitBug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FA3957248F86188F79EA79 /* Pods_AudioKitBug.framework */; };
 		B9ADBE8B243B4B4200232398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ADBE8A243B4B4200232398 /* AppDelegate.swift */; };
 		B9ADBE8D243B4B4200232398 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ADBE8C243B4B4200232398 /* SceneDelegate.swift */; };
-		B9ADBE8F243B4B4200232398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ADBE8E243B4B4200232398 /* ViewController.swift */; };
+		B9ADBE8F243B4B4200232398 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ADBE8E243B4B4200232398 /* TempViewController.swift */; };
 		B9ADBE92243B4B4200232398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9ADBE90243B4B4200232398 /* Main.storyboard */; };
 		B9ADBE94243B4B4500232398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9ADBE93243B4B4500232398 /* Assets.xcassets */; };
 		B9ADBE97243B4B4500232398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9ADBE95243B4B4500232398 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27FA3957248F86188F79EA79 /* Pods_AudioKitBug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioKitBug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB5B63EB1A420FD8D310657 /* Pods-AudioKitBug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKitBug.release.xcconfig"; path = "Target Support Files/Pods-AudioKitBug/Pods-AudioKitBug.release.xcconfig"; sourceTree = "<group>"; };
+		54AA65DF60EB7B23E8A04065 /* Pods-AudioKitBug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKitBug.debug.xcconfig"; path = "Target Support Files/Pods-AudioKitBug/Pods-AudioKitBug.debug.xcconfig"; sourceTree = "<group>"; };
 		B9ADBE87243B4B4200232398 /* AudioKitBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioKitBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9ADBE8A243B4B4200232398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9ADBE8C243B4B4200232398 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B9ADBE8E243B4B4200232398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9ADBE8E243B4B4200232398 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		B9ADBE91243B4B4200232398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9ADBE93243B4B4500232398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9ADBE96243B4B4500232398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1682D7ED382045E711E592 /* Pods_AudioKitBug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8400716A621120D594AC55D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27FA3957248F86188F79EA79 /* Pods_AudioKitBug.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A958542019BC8CCF656202F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54AA65DF60EB7B23E8A04065 /* Pods-AudioKitBug.debug.xcconfig */,
+				3EB5B63EB1A420FD8D310657 /* Pods-AudioKitBug.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B9ADBE7E243B4B4100232398 = {
 			isa = PBXGroup;
 			children = (
 				B9ADBE89243B4B4200232398 /* AudioKitBug */,
 				B9ADBE88243B4B4200232398 /* Products */,
+				A958542019BC8CCF656202F2 /* Pods */,
+				8400716A621120D594AC55D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +82,7 @@
 			children = (
 				B9ADBE8A243B4B4200232398 /* AppDelegate.swift */,
 				B9ADBE8C243B4B4200232398 /* SceneDelegate.swift */,
-				B9ADBE8E243B4B4200232398 /* ViewController.swift */,
+				B9ADBE8E243B4B4200232398 /* TempViewController.swift */,
 				B9ADBE90243B4B4200232398 /* Main.storyboard */,
 				B9ADBE93243B4B4500232398 /* Assets.xcassets */,
 				B9ADBE95243B4B4500232398 /* LaunchScreen.storyboard */,
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9ADBE9B243B4B4500232398 /* Build configuration list for PBXNativeTarget "AudioKitBug" */;
 			buildPhases = (
+				C7E7AD40908A04C1ADF1B863 /* [CP] Check Pods Manifest.lock */,
 				B9ADBE83243B4B4200232398 /* Sources */,
 				B9ADBE84243B4B4200232398 /* Frameworks */,
 				B9ADBE85243B4B4200232398 /* Resources */,
@@ -133,12 +158,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C7E7AD40908A04C1ADF1B863 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioKitBug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9ADBE83243B4B4200232398 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9ADBE8F243B4B4200232398 /* ViewController.swift in Sources */,
+				B9ADBE8F243B4B4200232398 /* TempViewController.swift in Sources */,
 				B9ADBE8B243B4B4200232398 /* AppDelegate.swift in Sources */,
 				B9ADBE8D243B4B4200232398 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,11 +332,13 @@
 		};
 		B9ADBE9C243B4B4500232398 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54AA65DF60EB7B23E8A04065 /* Pods-AudioKitBug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6U4VTSB8;
 				INFOPLIST_FILE = AudioKitBug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +352,13 @@
 		};
 		B9ADBE9D243B4B4500232398 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB5B63EB1A420FD8D310657 /* Pods-AudioKitBug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6U4VTSB8;
 				INFOPLIST_FILE = AudioKitBug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
