@@ -21,18 +21,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-gN-n1u" customClass="AKNodeOutputPlot" customModule="AudioKitUI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="kx9-Pa-2Bk"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="hcJ-gN-n1u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gtn-Jh-MXU"/>
+                            <constraint firstItem="hcJ-gN-n1u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nun-29-OB8"/>
                             <constraint firstItem="dWf-Qs-n1G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zzr-RQ-TYl"/>
                             <constraint firstItem="dWf-Qs-n1G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b1h-I9-v5m"/>
+                            <constraint firstItem="hcJ-gN-n1u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vHD-gO-6By"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="136"/>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
     </scenes>
 </document>
